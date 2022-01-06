@@ -14,13 +14,14 @@ const Toast = Swal.mixin({
 const button_send_mail = $("#send-message")
 
 button_send_mail.on("click", (e) => {
-    let text =  `name: ${$("#name").val()},
-                 email: ${$("#email").val()},
-                 subject: ${$("#subject").val()},
-                 message: ${$("#message").val()}`
+    let text = 
+    `name: ${$("#name").val()},
+     email: ${$("#email").val()},
+     subject: ${$("#subject").val()},
+     message: ${$("#message").val()}`
 
     const data = {
-        subject: "mail contact",
+        subject: "mail from webcv",
         text: text
     }
     const postData = axios({
